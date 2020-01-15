@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var name: String = "Max"
+    
     var body: some View {
         VStack {
             Image("test")
@@ -18,13 +21,17 @@ struct ContentView: View {
                 .padding(.all)
             //.clipShape(Circle())
             
-            Text("!")
+            Text("Hello \(name)!")
                 .font(.largeTitle)
                 .foregroundColor(.purple)
             
             Text("?")
                 .font(.title)
                 .foregroundColor(.orange)
+            
+            Button(action: { self.name = "Jack" }) {
+                Text("Change name")
+            }
             
             HStack {
                 Text("Left")
