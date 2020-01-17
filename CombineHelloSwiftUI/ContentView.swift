@@ -12,6 +12,8 @@ struct ContentView: View {
     
     @State var tasks: [Task] = []
     
+    @State var isPlaying: Bool = false
+    
     private func addTask() {
         tasks.append(Task(name: "Task1"))
     }
@@ -22,7 +24,11 @@ struct ContentView: View {
                 
                 Button(action: addTask) {
                     Text("Add task")
+                        .font(.title)
+                        .foregroundColor(isPlaying ? .green : .black)
                 }
+                
+                PlayingButton(isPlaying: $isPlaying)
                 
                 ForEach(tasks) { task in
                     
@@ -33,6 +39,21 @@ struct ContentView: View {
             }
         }
     }
+}
+
+struct PlayingButton: View {
+    
+    @Binding var isPlaying: Bool
+    
+    var body: some View {
+        
+        Button(action: { self.isPlaying.toggle() }) {
+            Text("Play IT")
+        }
+        .padding(12)
+        
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
