@@ -12,11 +12,14 @@ struct ContentView: View {
     
     @ObservedObject var fancyTimer: FancyTimer = FancyTimer()
     
+    @ObservedObject var userSettings: UserSettings = UserSettings()
+    
     @State var tasks: [Task] = []
     
     @State var isPlaying: Bool = false
     
     private func addTask() {
+        self.userSettings.incScore()
         tasks.append(Task(name: "Task\(fancyTimer.value)"))
     }
     
@@ -25,7 +28,7 @@ struct ContentView: View {
             List {
                 
                 Button(action: addTask) {
-                    Text("Add task № \(self.fancyTimer.value)")
+                    Text("Add task № \(self.userSettings.score)")
                         .font(.title)
                         .foregroundColor(isPlaying ? .green : .black)
                 }
