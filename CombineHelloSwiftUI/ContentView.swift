@@ -12,7 +12,7 @@ struct ContentView: View {
     
     @ObservedObject var fancyTimer: FancyTimer = FancyTimer()
     
-    @ObservedObject var userSettings: UserSettings = UserSettings()
+    @EnvironmentObject var userSettings: UserSettings
     
     @State var tasks: [Task] = []
     
@@ -42,6 +42,9 @@ struct ContentView: View {
                 }
                 
             }
+            
+            FancyScoreView()
+
         }
     }
 }

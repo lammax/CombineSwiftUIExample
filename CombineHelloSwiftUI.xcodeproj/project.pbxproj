@@ -16,6 +16,7 @@
 		04A7636923D19A3100483329 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7636823D19A3100483329 /* Task.swift */; };
 		04A7636C23D236D800483329 /* FancyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7636B23D236D800483329 /* FancyTimer.swift */; };
 		04B3127823E8BA74001D63CE /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3127723E8BA74001D63CE /* UserSettings.swift */; };
+		04B3127A23E8BCDD001D63CE /* FancyScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B3127923E8BCDD001D63CE /* FancyScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		04A7636823D19A3100483329 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		04A7636B23D236D800483329 /* FancyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTimer.swift; sourceTree = "<group>"; };
 		04B3127723E8BA74001D63CE /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		04B3127923E8BCDD001D63CE /* FancyScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				047BF2C123CF7BE10070CFA5 /* AppDelegate.swift */,
 				047BF2C323CF7BE10070CFA5 /* SceneDelegate.swift */,
+				04B3127923E8BCDD001D63CE /* FancyScoreView.swift */,
 				047BF2C523CF7BE10070CFA5 /* ContentView.swift */,
 				047BF2C723CF7BE20070CFA5 /* Assets.xcassets */,
 				047BF2CC23CF7BE30070CFA5 /* LaunchScreen.storyboard */,
@@ -185,6 +188,7 @@
 				047BF2C223CF7BE10070CFA5 /* AppDelegate.swift in Sources */,
 				047BF2C423CF7BE10070CFA5 /* SceneDelegate.swift in Sources */,
 				047BF2C623CF7BE10070CFA5 /* ContentView.swift in Sources */,
+				04B3127A23E8BCDD001D63CE /* FancyScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
