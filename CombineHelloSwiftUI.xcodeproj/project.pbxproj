@@ -14,6 +14,7 @@
 		047BF2CB23CF7BE30070CFA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047BF2CA23CF7BE30070CFA5 /* Preview Assets.xcassets */; };
 		047BF2CE23CF7BE30070CFA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047BF2CC23CF7BE30070CFA5 /* LaunchScreen.storyboard */; };
 		04A7636923D19A3100483329 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7636823D19A3100483329 /* Task.swift */; };
+		04A7636C23D236D800483329 /* FancyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7636B23D236D800483329 /* FancyTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		047BF2CD23CF7BE30070CFA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047BF2CF23CF7BE30070CFA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A7636823D19A3100483329 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		04A7636B23D236D800483329 /* FancyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		04A7636623D19A0F00483329 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				04A7636A23D236C700483329 /* Utils */,
 				04A7636723D19A1F00483329 /* Models */,
 			);
 			path = Lib;
@@ -92,6 +95,14 @@
 				04A7636823D19A3100483329 /* Task.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		04A7636A23D236C700483329 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04A7636B23D236D800483329 /* FancyTimer.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A7636C23D236D800483329 /* FancyTimer.swift in Sources */,
 				04A7636923D19A3100483329 /* Task.swift in Sources */,
 				047BF2C223CF7BE10070CFA5 /* AppDelegate.swift in Sources */,
 				047BF2C423CF7BE10070CFA5 /* SceneDelegate.swift in Sources */,

@@ -10,12 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @ObservedObject var fancyTimer: FancyTimer = FancyTimer()
+    
     @State var tasks: [Task] = []
     
     @State var isPlaying: Bool = false
     
     private func addTask() {
-        tasks.append(Task(name: "Task1"))
+        tasks.append(Task(name: "Task\(fancyTimer.value)"))
     }
     
     var body: some View {
@@ -23,7 +25,7 @@ struct ContentView: View {
             List {
                 
                 Button(action: addTask) {
-                    Text("Add task")
+                    Text("Add task № \(self.fancyTimer.value)")
                         .font(.title)
                         .foregroundColor(isPlaying ? .green : .black)
                 }
